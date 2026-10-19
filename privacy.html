@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, follow" />
+<title>Политика конфиденциальности — TmPixel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#07070d;
+  --card:rgba(18,18,30,.72);
+  --border:rgba(255,255,255,.08);
+  --accent:#a855f7;
+  --accent-2:#22d3ee;
+  --text:#e6e6f0;
+  --muted:#8a8aa5;
+  --font-display:'Press Start 2P',monospace;
+  --font-accent:'Silkscreen',monospace;
+  --font-body:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background:
+    radial-gradient(900px 500px at 15% 5%,rgba(168,85,247,.14),transparent 60%),
+    radial-gradient(700px 500px at 85% 10%,rgba(34,211,238,.10),transparent 60%);
+  pointer-events:none;
+}
+a{color:var(--accent-2);text-decoration:none;transition:color .2s}
+a:hover{color:var(--accent)}
+
+/* NAV */
+.nav{
+  padding:20px clamp(16px,4vw,48px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-family:var(--font-display);
+  font-size:14px;
+  letter-spacing:1px;
+  color:var(--text);
+}
+.logo .accent{
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.logo-cube{
+  width:18px;height:18px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  border-radius:4px;
+  box-shadow:0 0 18px rgba(168,85,247,.55);
+  transform:rotate(45deg);
+}
+.back-link{
+  font-size:14px;
+  color:var(--muted);
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.back-link:hover{color:var(--text)}
+
+/* CONTENT */
+.container{
+  max-width:820px;
+  margin:0 auto;
+  padding:20px clamp(16px,4vw,24px) 80px;
+  flex:1;
+  width:100%;
+}
+h1{
+  font-size:clamp(28px,5vw,42px);
+  font-weight:800;
+  letter-spacing:-1px;
+  margin:30px 0 16px;
+  line-height:1.15;
+}
+.last-updated{
+  font-family:var(--font-accent);
+  font-size:12px;
+  color:var(--accent-2);
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  margin-bottom:36px;
+}
+.card{
+  padding:clamp(24px,4vw,40px);
+  border-radius:20px;
+  background:var(--card);
+  border:1px solid var(--border);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  box-shadow:0 20px 50px -20px rgba(0,0,0,.5);
+}
+h2{
+  font-size:20px;
+  font-weight:700;
+  margin:36px 0 14px;
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+h2:first-child{margin-top:0}
+h2::before{
+  content:'';
+  display:inline-block;
+  width:4px;
+  height:18px;
+  background:linear-gradient(180deg,var(--accent),var(--accent-2));
+  border-radius:2px;
+}
+p{
+  margin-bottom:16px;
+  color:var(--muted);
+  font-size:15px;
+}
+ul{
+  margin-bottom:16px;
+  padding-left:20px;
+}
+li{
+  margin-bottom:8px;
+  color:var(--muted);
+  font-size:15px;
+}
+strong{
+  color:var(--text);
+  font-weight:600;
+}
+.note{
+  padding:16px;
+  border-radius:12px;
+  background:rgba(34,211,238,.05);
+  border:1px solid rgba(34,211,238,.2);
+  color:#7dd3fc;
+  font-size:14px;
+  margin:20px 0;
+}
+.note strong{color:#67e8f9}
+
+/* FOOTER */
+.footer{
+  padding:30px clamp(16px,4vw,48px);
+  border-top:1px solid var(--border);
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:auto;
+}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.footer a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a href="https://timblogplay-ai.github.io/TmPixelWeb/" class="logo">
+    <span class="logo-cube" aria-hidden="true"></span>
+    Tm<span class="accent">Pixel</span>
+  </a>
+  <a href="https://timblogplay-ai.github.io/TmPixelWeb/" class="back-link">← На главную</a>
+</header>
+
+<main class="container">
+  <h1>Политика конфиденциальности</h1>
+  <div class="last-updated">Последнее обновление: Октябрь 2026</div>
+
+  <div class="card">
+    <p>Настоящая Политика конфиденциальности описывает, как Minecraft-сервер <strong>TmPixel</strong> (далее — «Сервер», «мы») собирает, использует и защищает информацию, которую вы предоставляете при использовании нашего сайта, магазина и игровых сервисов.</p>
+
+    <h2>1. Какую информацию мы собираем</h2>
+    <p>Мы собираем только те данные, которые необходимы для работы сайта и игрового процесса. К ним относятся:</p>
+    <ul>
+      <li><strong>Данные авторизации:</strong> при входе через сервис Millida (или другие игровые сервисы) мы получаем ваш игровой никнейм, аватар и, при необходимости, скин Minecraft.</li>
+      <li><strong>Контактные данные:</strong> если вы пишете нам в бот поддержки <a href="https://t.me/TmPixelSupportBot" target="_blank" rel="noopener noreferrer">@TmPixelSupportBot</a>, мы видим ваш Telegram ID и имя, указанное в профиле.</li>
+      <li><strong>Технические данные:</strong> при посещении сайта автоматически собирается стандартная информация (IP-адрес, тип браузера, время посещения) для обеспечения безопасности и стабильной работы.</li>
+      <li><strong>Локальные данные:</strong> мы используем LocalStorage вашего браузера для сохранения голосов в опросах и настроек сезонного оформления. Эти данные не передаются на сервер.</li>
+    </ul>
+
+    <h2>2. Как мы используем информацию</h2>
+    <p>Собранные данные используются исключительно для следующих целей:</p>
+    <ul>
+      <li>Предоставление доступа к личному кабинету на сайте.</li>
+      <li>Отображение вашего игрового профиля и скина.</li>
+      <li>Обработка заказов в официальном магазине и выдача привилегий.</li>
+      <li>Ответы на ваши вопросы и обращения в службу поддержки.</li>
+      <li>Улучшение работы сайта и игрового сервера.</li>
+    </ul>
+
+    <h2>3. Передача данных третьим лицам</h2>
+    <p>Мы <strong>не продаём и не передаём</strong> ваши персональные данные третьим лицам в маркетинговых целях. Передача возможна только в следующих случаях:</p>
+    <ul>
+      <li><strong>Платёжные системы:</strong> для обработки оплаты в магазине данные передаются платёжному провайдеру (Millida).</li>
+      <li><strong>Хостинг:</strong> сайт размещён на платформе GitHub Pages, которая может обрабатывать технические данные (IP-адреса) в соответствии со своей политикой.</li>
+      <li><strong>По требованию закона:</strong> если это необходимо для соблюдения законодательства.</li>
+    </ul>
+
+    <h2>4. Cookies и локальное хранилище</h2>
+    <p>Мы не используем сторонние трекеры и рекламные cookies. Мы используем <strong>LocalStorage</strong> браузера для:</p>
+    <ul>
+      <li>Запоминания вашего голоса в опросе (чтобы вы не голосовали дважды).</li>
+      <li>Сохранения текущего сезонного оформления сайта.</li>
+    </ul>
+    <p>Вы можете очистить эти данные в любой момент через настройки браузера.</p>
+
+    <h2>5. Безопасность данных</h2>
+    <p>Мы принимаем разумные меры для защиты ваших данных от несанкционированного доступа. Однако помните, что ни один метод передачи данных через интернет не является на 100% безопасным.</p>
+
+    <h2>6. Ваши права</h2>
+    <p>Вы имеете право:</p>
+    <ul>
+      <li>Запросить информацию о том, какие ваши данные у нас хранятся.</li>
+      <li>Попросить удалить ваши данные (отвязать аккаунт, удалить профиль на сайте).</li>
+    </ul>
+    <div class="note">
+      <strong>Важно:</strong> для реализации этих прав напишите в наш бот поддержки <a href="https://t.me/TmPixelSupportBot" target="_blank" rel="noopener noreferrer">@TmPixelSupportBot</a> с указанием вашего игрового никнейма.
+    </div>
+
+    <h2>7. Дети</h2>
+    <p>Сервер не направлен на сбор данных детей младше 13 лет. Если вы являетесь родителем и считаете, что ваш ребёнок предоставил нам личные данные, свяжитесь с нами для их удаления.</p>
+
+    <h2>8. Изменения в политике</h2>
+    <p>Мы можем обновлять эту Политику конфиденциальности. Актуальная версия всегда доступна на этой странице. Дата последнего обновления указана в начале документа.</p>
+
+    <h2>9. Контакты</h2>
+    <p>По всем вопросам, связанным с конфиденциальностью и обработкой данных, обращайтесь:</p>
+    <ul>
+      <li><strong>Telegram-бот поддержки:</strong> <a href="https://t.me/TmPixelSupportBot" target="_blank" rel="noopener noreferrer">@TmPixelSupportBot</a></li>
+      <li><strong>Telegram-канал:</strong> <a href="https://t.me/timblogplayfirst_official" target="_blank" rel="noopener noreferrer">@timblogplayfirst_official</a></li>
+    </ul>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© 2026 TmPixel. Не связан с Mojang / Microsoft.</p>
+  <p style="margin-top:8px;"><a href="https://timblogplay-ai.github.io/TmPixelWeb/">Вернуться на главную</a></p>
+</footer>
+
+</body>
+</html>
